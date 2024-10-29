@@ -22,7 +22,7 @@ def multiply(c: int, d: int):
 
 @app.get("/square/{e}")
 def square(e: int):
-    return {"square": e^2}
+    return {"square": e**2}
 
 @app.get("/makeaname/{f}/{g}")
 def name(f: str, g: str):
