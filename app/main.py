@@ -20,6 +20,10 @@ def add(a: int, b: int):
 def multiply(c: int, d: int):
     return {"product": c * d}
 
+@app.get("/square/{e}")
+def square(e: int):
+    return {"square": e * e}
+
 @app.get("/makeaname/{f}/{g}")
 def name(f: str, g: str):
     return {"name": f + " " + g}
