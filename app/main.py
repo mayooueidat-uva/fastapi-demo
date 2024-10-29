@@ -19,3 +19,7 @@ def add(a: int, b: int):
 @app.get("/multiply/{c}/{d}")
 def multiply(c: int, d: int):
     return {"product": c * d}
+
+@app.get("/makeaname/{f}/{g}")
+def name(f: str, g: str):
+    return {"name": f + " " + g}
