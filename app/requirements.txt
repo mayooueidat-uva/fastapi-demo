@@ -1,8 +1,0 @@
-mysql-connector-python
-uvicorn
-fastapi[standard]
-typing
-pydantic
-pymongo
-dnspython
-mysqlclient
