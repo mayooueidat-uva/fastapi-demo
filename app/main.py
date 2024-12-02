@@ -36,7 +36,7 @@ def add(a: int, b: int):
 def multiply(c: int, d: int):
     return {"product": c * d}
 
-@app.get('/genres')
+@app.get("/genres")
 def get_genres():
     query = "SELECT * FROM genres ORDER BY genreid;"
     try:    
@@ -51,7 +51,7 @@ def get_genres():
         return {"Error": "MySQL Error: " + str(e)}
 
 
-@app.get('/songs')
+@app.get("/songs")
 def get_songs():
     query = "SELECT songs.title, songs.album, songs.artist, songs.year, songs.file, songs.image, genres.genre FROM songs JOIN genres ON songs.genre=genres.genreid;"
     try:
